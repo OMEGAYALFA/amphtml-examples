@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="canonical"
           href="myampwebpage.html">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:400,700">
     <style amp-boilerplate>
       body { 
         -webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
@@ -47,20 +49,23 @@
       </style>
     </noscript>
     <style amp-custom>
-      body      { background: #FEFEFE; color: #545454; line-height:1.4; font-family: caption,sans-serif }
-      
-      main      { max-width: 500px; margin: 0 auto }
-      
-      h1        { font-weight: 400; font-size: 14rem }
-      h2        { font-weight: 700; font-size: 4rem }
-      p         { font-weight: 400; font-size: 1.2rem }
-      .font-load           { font-family: "Roboto" }
-      .font-error          { font-family: caption,sans-serif }
+      body          { background: #FEFEFE; color: #545454; line-height:1.4; font-family: caption,sans-serif }
+      main, nav     { max-width: 500px; margin: 0 auto }
+      h1            { font-weight: 400; font-size: 14rem }
+      h2            { font-weight: 700; font-size: 4rem }
+      p             { font-weight: 400; font-size: 1.2rem }
+      .font-load    { font-family: "Roboto" }
+      .font-error   { font-family: caption,sans-serif }
+      nav a         { display: inline-block; font-weight:700; font-size: 1.4rem; text-transform:uppercase }
     </style>
     <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
+    <nav>
+      <a href="/home">Home</a>
+      <a href="/amphtml">AMP-HTML Examples</a>
+    </nav>
     <main>
       <h1>Welcome to my AMP web page</h1>
       <amp-img
@@ -76,5 +81,12 @@
         This page is mobile-first and responsive; the content will scale to fit a multitude of mobile device sizes, up to a theoretical maximum.
       </p>
     </main>
+    <amp-font
+      layout="nodisplay"
+      font-family="Roboto"
+      timeout="3000"
+      on-load-add-class="font-load"
+      on-error-add-class="font-error">
+    </amp-font>
   </body>
 </html>
