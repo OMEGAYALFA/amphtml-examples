@@ -46,17 +46,28 @@
         }
       </style>
     </noscript>
-    <style>
+    <style amp-custom>
       body      { background: #FEFEFE; color: #545454; line-height:1.4; font-family: caption,sans-serif }
-      h1, h2, p { max-width: 500px; margin: 0 auto }
+      
+      header,
+      h2, 
+      p         { max-width: 500px; margin: 0 auto }
+      
       h1        { font-weight: 400; font-size: 14rem }
       h2        { font-weight: 700; font-size: 4rem }
       p         { font-weight: 400; font-size: 1.2rem }
+      header    { padding:50% 0 }
+      figure    { 
+                  background:url(https://dl.dropboxusercontent.com/u/32029178/amp/amp2x.png) 50% no-repeat
+                  background-size:cover
+                }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-    <h1>⚡ </h1>
+    <header>
+      <figure></figure>
+    </header>
     <h2>Hello, world!</h2>
     <p>This is your basic AMP boilerplate, now crank it up to 11.</p>
   </body>
