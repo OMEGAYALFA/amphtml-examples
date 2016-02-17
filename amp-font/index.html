@@ -49,11 +49,14 @@
       </style>
     </noscript>
     <style amp-custom>
-      body        { background: #FEFEFE; color: #545454; line-height:1.4 }
-      h1, h2, p   { max-width: 500px; margin: 0 auto }
-      h1          { font-weight: 400; font-size: 14rem }
-      h2          { font-weight: 700; font-size: 4rem }
-      p           { font-weight: 400; font-size: 1.2rem }
+      body                 { background: #FEFEFE; color: #545454; line-height:1.4 }
+      h1, h2, p            { max-width: 500px; margin: 0 auto }
+      h1                   { font-weight: 400; font-size: 14rem }
+      h2                   { font-weight: 700; font-size: 4rem }
+      p                    { font-weight: 400; font-size: 1.2rem }
+      p:after              { display:inline; font-weight: 400; font-size: 1.2rem }
+      .font-load p:after   { content: 'Roboto' }
+      .font-error p:after  { content: 'the default system font' }
       .font-load  { font-family: "Roboto" }
       .font-error { font-family: caption,sans-serif }
     </style>
@@ -63,7 +66,7 @@
   <body>
     <h1>⚡ </h1>
     <h2>Hello, world!</h2>
-    <p>This is your basic AMP boilerplate, now crank it up to 11.</p>
+    <p>I am displayed in </p>
     <amp-font
       layout="nodisplay"
       font-family="Roboto"
