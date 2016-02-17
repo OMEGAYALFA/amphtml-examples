@@ -1,0 +1,87 @@
+<!doctype html>
+<html amp>
+  <head>
+    <title>
+      My AMP Web Page
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical"
+          href="myampwebpage.html">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <style amp-boilerplate>
+      body {
+        -webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+        -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+        -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+        animation:-amp-start 8s steps(1,end) 0s 1 normal both
+      }
+      @-webkit-keyframes -amp-start {
+        from{visibility:hidden}
+        to{visibility:visible}
+      }
+      @-moz-keyframes -amp-start {
+        from{visibility:hidden}
+        to{visibility:visible}
+      }
+      @-ms-keyframes -amp-start {
+        from{visibility:hidden}
+        to{visibility:visible}
+      }
+      @-o-keyframes -amp-start {
+        from{visibility:hidden}
+        to{visibility:visible}
+      }
+      @keyframes -amp-start {
+        from{visibility:hidden}
+        to{visibility:visible}
+      }
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation:none;
+          -moz-animation:none;
+          -ms-animation:none;
+          animation:none
+        }
+      </style>
+    </noscript>
+    <style amp-custom>
+      body                 { background: #FEFEFE; color: #545454; line-height:1.4 }
+      h1, h2, p            { max-width: 500px; margin: 0 auto }
+      h1                   { font-weight: 400; font-size: 14rem }
+      h2                   { font-weight: 700; font-size: 4rem }
+      p                    { font-weight: 400; font-size: 1.2rem }
+      p:after              { display:inline; font-weight: 400; font-size: 1.2rem }
+      .font-load           { font-family: "Roboto" }
+      .font-error          { font-family: caption,sans-serif }
+      .font-load p:after   { content: 'Roboto' }
+      .font-error p:after  { content: 'the default system font' }
+    </style>
+    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <amp-img
+      src="images/hero@1x.jpg"
+      srcset="https://dl.dropboxusercontent.com/u/32029178/amp/amp1x.png 1x, https://dl.dropboxusercontent.com/u/32029178/amp/amp2x.png 2x"
+      layout="responsive" 
+      width="360"
+      height="216"
+      heights="(min-width:1420px) 20%, (min-width:1320px) 25%, (min-width:1000px) 40%, (min-width:760px)  85%, (min-width:500px) 100%, 120%"
+      alt="AMP Layout Example"
+      placeholder>
+    </amp-img>
+    <h2>Hello, world!</h2>
+    <p>I am displayed in </p>
+    <amp-font
+      layout="nodisplay"
+      font-family="Roboto"
+      timeout="3000"
+      on-load-add-class="font-load"
+      on-error-add-class="font-error">
+    </amp-font>
+  </body>
+</html>
