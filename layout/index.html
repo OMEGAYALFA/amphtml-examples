@@ -59,6 +59,7 @@
       .font-error          { font-family: caption,sans-serif }
       .font-load p:after   { content: "Roboto" }
       .font-error p:after  { content: "the default system font" }
+      amp-img:first-child img { width:100%; height:auto }
     </style>
     <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -82,7 +83,7 @@
       </amp-img>
       <amp-img
         src="https://dl.dropboxusercontent.com/u/32029178/amp/amp2x.png"
-        layout="fixed-height"
+        layout="fill"
         width="auto"
         height="638"
         alt="AMP Layout Example"
